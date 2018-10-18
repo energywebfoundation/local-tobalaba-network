@@ -1,0 +1,55 @@
+[parity]
+base_path = "db.charlie"
+chain = "../chainspec/tobalaba_local.json"
+
+[ui]
+disable = false
+
+[rpc]
+disable = false
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+port = 8549
+cors = ["*"]
+
+[ipc]
+disable = true
+
+[websockets]
+disable = true
+
+[dapps]
+disable = false
+
+[ipfs]
+enable = false
+
+[network]
+port = 30305
+#node_key = "8b2c16e09bfb011c5e4883cedb105124ccf01af7"
+bootnodes = [
+    "enode://170ec31c16bc17cb3d73a29e6ecc14d4fbca35cca6cb7d12726a292aa06b1969a59a4c97090b650eb1c3dfc9fb2c736fbe8310c0323b6b6bf87735860dd1691d@127.0.0.1:30303",
+    "enode://cbd5918d0a1de540efad5129fc212fc062853f18b9d41ac6f1a998ada58b00f16d96db19237228202e6d89628f6c32b60e8fd1a61774d999f6ddf01f4814df36@127.0.0.1:30304"
+]
+
+[snapshots]
+disable_periodic = true
+
+[secretstore]
+disable = true
+
+[misc]
+logging = "transaction_pool=trace,txqueue=trace,own_tx=trace"
+log_file = "./db.charlie/parity.log"
+color = true
+
+[mining]
+engine_signer = "0x8e2b1458c943d7369986451eba65a48da87792f4"
+reseal_on_txs = "none"
+
+# to unlock account of charlie
+[account]
+# unlock = ["0x8b2c16e09bfb011c5e4883cedb105124ccf01af7"]
+password = ["charlie.pwd"]
+
+[private_tx]
+enabled = false

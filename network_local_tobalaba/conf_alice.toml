@@ -1,0 +1,55 @@
+[parity]
+base_path = "db.alice"
+chain = "../chainspec/tobalaba_local.json"
+
+[ui]
+disable = false
+
+[rpc]
+disable = false
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+port = 8545
+cors = ["*"]
+
+[ipc]
+disable = true
+
+[websockets]
+disable = true
+
+[dapps]
+disable = false
+
+[ipfs]
+enable = false
+
+[network]
+port = 30303
+#node_key = "3144de21da6de18061f818836fa3db8f3d6b6989"
+bootnodes = [
+    "enode://cbd5918d0a1de540efad5129fc212fc062853f18b9d41ac6f1a998ada58b00f16d96db19237228202e6d89628f6c32b60e8fd1a61774d999f6ddf01f4814df36@127.0.0.1:30304",
+    "enode://47f5f3de6be5d414da5c0962877634f5a144d3d39eaa504fdbfb97f5f43a851e3c29e7a9bd480316485676748c0b3eb30cbb5ae741a19f465a45ce06027e9815@127.0.0.1:30305"
+]
+
+[snapshots]
+disable_periodic = true
+
+[secretstore]
+disable = true
+
+[misc]
+logging = "transaction_pool=trace,txqueue=trace,own_tx=trace"
+log_file = "./db.alice/parity.log"
+color = true
+
+[mining]
+engine_signer = "0x2daa43fbcf5a5a7518b45665cc00d577f080f325"
+reseal_on_txs = "none"
+
+# to unlock account of alice
+[account]
+# unlock = ["0x2daa43fbcf5a5a7518b45665cc00d577f080f325"]
+password = ["alice.pwd"]
+
+[private_tx]
+enabled = false
