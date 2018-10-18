@@ -102,3 +102,25 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# parity binary
+parity
+
+# node data
+network_tobalabalocal/db.local_tobalaba_alice/cache/
+network_tobalabalocal/db.local_tobalaba_alice/chains/
+network_tobalabalocal/db.local_tobalaba_alice/network/
+network_tobalabalocal/db.local_tobalaba_alice/secretstore/
+network_tobalabalocal/db.local_tobalaba_alice/signer/
+
+network_tobalabalocal/db.local_tobalaba_bob/cache/
+network_tobalabalocal/db.local_tobalaba_bob/chains/
+network_tobalabalocal/db.local_tobalaba_bob/network/
+network_tobalabalocal/db.local_tobalaba_bob/secretstore/
+network_tobalabalocal/db.local_tobalaba_bob/signer/
+
+network_tobalabalocal/db.local_tobalaba_charlie/cache/
+network_tobalabalocal/db.local_tobalaba_charlie/chains/
+network_tobalabalocal/db.local_tobalaba_charlie/network/
+network_tobalabalocal/db.local_tobalaba_charlie/secretstore/
+network_tobalabalocal/db.local_tobalaba_charlie/signer/
